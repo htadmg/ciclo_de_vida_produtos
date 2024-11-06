@@ -1,0 +1,142 @@
+[
+    {
+        "nome": "Embalagem de Garrafa PET",
+        "tempo_decomposicao": "450 anos",
+        "materiais": ["plástico"],
+        "danos_natureza": "Contaminação do solo e da água",
+        "producao_anual": "500 milhões"
+    },
+    {
+        "nome": "Embalagem de Salgadinho",
+        "tempo_decomposicao": "100 anos",
+        "materiais": ["plástico", "alumínio"],
+        "danos_natureza": "Poluição de oceanos",
+        "producao_anual": "1 bilhão"
+    },
+    {
+        "nome": "Embalagem de Caixa de Papelão",
+        "tempo_decomposicao": "2 anos",
+        "materiais": ["papelão"],
+        "danos_natureza": "Degradação de ecossistemas",
+        "producao_anual": "50 bilhões"
+    },
+    {
+        "nome": "Embalagem de Garrafa de Vidro",
+        "tempo_decomposicao": "1 milhão de anos",
+        "materiais": ["vidro"],
+        "danos_natureza": "Liberação de substâncias tóxicas",
+        "producao_anual": "100 milhões"
+    },
+    {
+        "nome": "Embalagem de Lata de Alumínio",
+        "tempo_decomposicao": "80 anos",
+        "materiais": ["alumínio"],
+        "danos_natureza": "Poluição do solo",
+        "producao_anual": "200 bilhões"
+    },
+    {
+        "nome": "Embalagem de Plástico de Uso Único",
+        "tempo_decomposicao": "500 anos",
+        "materiais": ["plástico"],
+        "danos_natureza": "Poluição de oceanos e vida marinha",
+        "producao_anual": "300 bilhões"
+    },
+    {
+        "nome": "Embalagem de Sacola Plástica",
+        "tempo_decomposicao": "400 anos",
+        "materiais": ["plástico"],
+        "danos_natureza": "Poluição de rios e mares",
+        "producao_anual": "1 trilhão"
+    },
+    {
+        "nome": "Embalagem de Pote de Iogurte",
+        "tempo_decomposicao": "250 anos",
+        "materiais": ["plástico"],
+        "danos_natureza": "Contaminação do solo e da água",
+        "producao_anual": "50 bilhões"
+    },
+    {
+        "nome": "Embalagem de Tetra Pak",
+        "tempo_decomposicao": "50 anos",
+        "materiais": ["papel, alumínio e plástico"],
+        "danos_natureza": "Poluição e não reciclagem fácil",
+        "producao_anual": "200 bilhões"
+    },
+    {
+        "nome": "Embalagem de Filme Plástico",
+        "tempo_decomposicao": "1.000 anos",
+        "materiais": ["plástico"],
+        "danos_natureza": "Poluição dos oceanos",
+        "producao_anual": "700 bilhões"
+    },
+    {
+        "nome": "Embalagem de Isopor",
+        "tempo_decomposicao": "1.000 anos",
+        "materiais": ["poliestireno expandido"],
+        "danos_natureza": "Danos a vida marinha e poluição do solo",
+        "producao_anual": "100 bilhões"
+    },
+    {
+        "nome": "Embalagem de Saco de Lixo",
+        "tempo_decomposicao": "1.000 anos",
+        "materiais": ["plástico"],
+        "danos_natureza": "Poluição ambiental e contaminação",
+        "producao_anual": "50 bilhões"
+    },
+    {
+        "nome": "Embalagem de Lata de Sopa",
+        "tempo_decomposicao": "100 anos",
+        "materiais": ["aço"],
+        "danos_natureza": "Poluição do solo",
+        "producao_anual": "10 bilhões"
+    },
+    {
+        "nome": "Embalagem de Caixa de Fósforo",
+        "tempo_decomposicao": "5 anos",
+        "materiais": ["papel, fósforo"],
+        "danos_natureza": "Poluição de rios",
+        "producao_anual": "500 milhões"
+    },
+    {
+        "nome": "Embalagem de Pote de Sorvete",
+        "tempo_decomposicao": "200 anos",
+        "materiais": ["plástico"],
+        "danos_natureza": "Poluição de ambientes aquáticos",
+        "producao_anual": "50 bilhões"
+    },
+    {
+        "nome": "Embalagem de Fruta Desidratada",
+        "tempo_decomposicao": "30 anos",
+        "materiais": ["plástico"],
+        "danos_natureza": "Degradação do solo",
+        "producao_anual": "5 bilhões"
+    },
+    {
+        "nome": "Embalagem de Sacola de Papel",
+        "tempo_decomposicao": "1 mês",
+        "materiais": ["papel"],
+        "danos_natureza": "Impacto mínimo",
+        "producao_anual": "20 bilhões"
+    },
+    {
+        "nome": "Embalagem de Papel Alumínio",
+        "tempo_decomposicao": "200 anos",
+        "materiais": ["alumínio, plástico"],
+        "danos_natureza": "Difícil decomposição",
+        "producao_anual": "50 bilhões"
+    },
+    {
+        "nome": "Embalagem de Cartão de Ovos",
+        "tempo_decomposicao": "2 anos",
+        "materiais": ["papelão"],
+        "danos_natureza": "Impacto mínimo no ambiente",
+        "producao_anual": "1 bilhão"
+    },
+    {
+        "nome": "Embalagem de Caixa de Cereal",
+        "tempo_decomposicao": "6 meses",
+        "materiais": ["papelão"],
+        "danos_natureza": "Degradação rápida",
+        "producao_anual": "30 bilhões"
+    }
+]

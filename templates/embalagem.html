@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Informações sobre Embalagens</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Ciclo de Vida dos Produtos.</h1>
+    <ul>
+        {% for embalagem in embalagens %}
+            <li>
+                <strong>{{ embalagem.nome }}</strong><br>
+                Tempo de decomposição: {{ embalagem.tempo_de_decomposicao }}<br>
+                Materiais: {{ embalagem.materiais }}<br>
+                Danos à natureza: {{ embalagem.danos_natureza }}<br>
+                Quantidade anual produzida: {{ embalagem.quantidade_producao_anual }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
