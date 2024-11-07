@@ -19,6 +19,7 @@ def extrair_materiais_unicos(embalagens):
 @app.route('/')
 def index():
     materiais_unicos = extrair_materiais_unicos(embalagens)
+    print(embalagens)
     return render_template('embalagem.html', embalagens=embalagens, materiais_unicos=materiais_unicos)
 
 @app.route('/filtro/<material>')

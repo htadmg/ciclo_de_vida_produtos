@@ -50,9 +50,9 @@
                                 <!-- Verificação e exibição do impacto ambiental -->
                                 {% if embalagem.impacto_ambiental %}
                                     <h6 class="mt-3">Impacto Ambiental</h6>
-                                    <p class="card-text"><strong>Emissão de carbono:</strong> {{ embalagem.impacto_ambiental.emissao_carbono }}</p>
-                                    <p class="card-text"><strong>Consumo de água:</strong> {{ embalagem.impacto_ambiental.consumo_agua }}</p>
-                                    <p class="card-text"><strong>Uso de energia:</strong> {{ embalagem.impacto_ambiental.uso_energia }}</p>
+                                    <p class="card-text"><strong>Emissão de carbono:</strong> {{ embalagem.impacto_ambiental["emissao_carbono"]}}</p>
+                                    <p class="card-text"><strong>Consumo de água:</strong> {{ embalagem.impacto_ambiental["consumo_agua"] }}</p>
+                                    <p class="card-text"><strong>Uso de energia:</strong> {{ embalagem.impacto_ambiental["uso_energia"] }}</p>
                                 {% endif %}
     
                                 <!-- Simulações de cenários -->
