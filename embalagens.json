@@ -58,7 +58,7 @@
     {
         "nome": "Embalagem de Tetra Pak",
         "tempo_decomposicao": "50 anos",
-        "materiais": ["papel, alumínio e plástico"],
+        "materiais": ["papel","alumínio","plástico"],
         "danos_natureza": "Poluição e não reciclagem fácil",
         "producao_anual": "200 bilhões"
     },
@@ -93,7 +93,7 @@
     {
         "nome": "Embalagem de Caixa de Fósforo",
         "tempo_decomposicao": "5 anos",
-        "materiais": ["papel, fósforo"],
+        "materiais": ["papel", "fósforo"],
         "danos_natureza": "Poluição de rios",
         "producao_anual": "500 milhões"
     },
@@ -121,7 +121,7 @@
     {
         "nome": "Embalagem de Papel Alumínio",
         "tempo_decomposicao": "200 anos",
-        "materiais": ["alumínio, plástico"],
+        "materiais": ["alumínio", "plástico"],
         "danos_natureza": "Difícil decomposição",
         "producao_anual": "50 bilhões"
     },

@@ -15,10 +15,14 @@
 
     <!-- Lista de Materiais -->
     <div class="container my-4">
+        <h2 class="text-center">Materiais Usados</h2>
         <nav class="d-flex justify-content-center">
             <ul class="list-unstyled">
                 {% for material in materiais_unicos %}
-                    <li class="d-inline-block mx-3 fs-5">{{ material }}</li>
+                    <a href="{{ url_for('filtrar_por_material', material=material) }}" 
+                       class="d-inline-block mx-3 fs-5 {% if material == material_selecionado %}fw-bold text-primary{% endif %}">
+                       {{ material }}
+                    </a>
                 {% endfor %}
             </ul>
         </nav>
@@ -27,19 +31,23 @@
     <!-- Informações sobre as embalagens -->
     <div class="container my-4">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-            {% for embalagem in embalagens %}
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ embalagem.nome }}</h5>
-                            <p class="card-text"><strong>Tempo de decomposição:</strong> {{ embalagem.tempo_de_composicao }}</p>
-                            <p class="card-text"><strong>Materiais:</strong> {{ embalagem.materiais | join(', ') }}</p>
-                            <p class="card-text"><strong>Danos à natureza:</strong> {{ embalagem.danos_natureza }}</p>
-                            <p class="card-text"><strong>Quantidade anual produzida:</strong> {{ embalagem.producao_anual }}</p>
+            {% if not embalagens %}
+                <p class="text-center">Nenhuma embalagem encontrada para o material selecionado.</p>
+            {% else %}
+                {% for embalagem in embalagens %}
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ embalagem.nome }}</h5>
+                                <p class="card-text"><strong>Tempo de decomposição:</strong> {{ embalagem.tempo_de_composicao }}</p>
+                                <p class="card-text"><strong>Materiais:</strong> {{ embalagem.materiais | join(', ') }}</p>
+                                <p class="card-text"><strong>Danos à natureza:</strong> {{ embalagem.danos_natureza }}</p>
+                                <p class="card-text"><strong>Quantidade anual produzida:</strong> {{ embalagem.producao_anual }}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            {% endfor %}
+                {% endfor %}
+            {% endif %}
         </div>
     </div>
 
