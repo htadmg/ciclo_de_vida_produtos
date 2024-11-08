@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Embalagem</title>
+    <!-- Link para o Bootstrap 4 ou 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 20px;
+        }
+        .section-header {
+            margin-top: 30px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">{{ embalagem.nome }}</h1>
+
+        <div class="row">
+            <!-- Impacto Ambiental -->
+            <div class="col-md-6">
+                <h2 class="section-header">Impacto Ambiental</h2>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Emissão de Carbono:</strong> {{ embalagem.impacto_ambiental.emissao_carbono }}</li>
+                    <li class="list-group-item"><strong>Consumo de Água:</strong> {{ embalagem.impacto_ambiental.consumo_agua }}</li>
+                    <li class="list-group-item"><strong>Uso de Energia:</strong> {{ embalagem.impacto_ambiental.uso_energia }}</li>
+                </ul>
+            </div>
+
+            <!-- Outras Informações -->
+            <div class="col-md-6">
+                <h2 class="section-header">Informações</h2>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Tempo de Decomposição:</strong> {{ embalagem.tempo_decomposicao }}</li>
+                    <li class="list-group-item"><strong>Materiais:</strong> {{ embalagem.materiais | join(', ') }}</li>
+                    <li class="list-group-item"><strong>Danos à Natureza:</strong> {{ embalagem.danos_natureza }}</li>
+                    <li class="list-group-item"><strong>Produção Anual:</strong> {{ embalagem.producao_anual }}</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Simulações de Cenários -->
+        <h3 class="section-header">Simulações de Cenários</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Cenário Padrão</h4>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Descrição:</strong> {{ embalagem.simulacoes_cenarios.cenario_padrao.descricao }}</li>
+                    <li class="list-group-item"><strong>Emissão de Carbono:</strong> {{ embalagem.simulacoes_cenarios.cenario_padrao.emissao_carbono }}</li>
+                    <li class="list-group-item"><strong>Consumo de Água:</strong> {{ embalagem.simulacoes_cenarios.cenario_padrao.consumo_agua }}</li>
+                    <li class="list-group-item"><strong>Uso de Energia:</strong> {{ embalagem.simulacoes_cenarios.cenario_padrao.uso_energia }}</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h4>Cenário Reciclável</h4>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Descrição:</strong> {{ embalagem.simulacoes_cenarios.cenario_reciclavel.descricao }}</li>
+                    <li class="list-group-item"><strong>Emissão de Carbono:</strong> {{ embalagem.simulacoes_cenarios.cenario_reciclavel.emissao_carbono }}</li>
+                    <li class="list-group-item"><strong>Consumo de Água:</strong> {{ embalagem.simulacoes_cenarios.cenario_reciclavel.consumo_agua }}</li>
+                    <li class="list-group-item"><strong>Uso de Energia:</strong> {{ embalagem.simulacoes_cenarios.cenario_reciclavel.uso_energia }}</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h4>Cenário de Energia Renovável</h4>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Descrição:</strong> {{ embalagem.simulacoes_cenarios.cenario_energia_renovavel.descricao }}</li>
+                    <li class="list-group-item"><strong>Emissão de Carbono:</strong> {{ embalagem.simulacoes_cenarios.cenario_energia_renovavel.emissao_carbono }}</li>
+                    <li class="list-group-item"><strong>Consumo de Água:</strong> {{ embalagem.simulacoes_cenarios.cenario_energia_renovavel.consumo_agua }}</li>
+                    <li class="list-group-item"><strong>Uso de Energia:</strong> {{ embalagem.simulacoes_cenarios.cenario_energia_renovavel.uso_energia }}</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Sugestões de Melhoria -->
+        <h3 class="section-header">Sugestões de Melhoria</h3>
+        <ul class="list-group">
+            {% for sugestao in embalagem.sugestoes_melhoria %}
+                <li class="list-group-item">{{ sugestao }}</li>
+            {% endfor %}
+        </ul>
+
+        <div class="mt-4">
+            <a class="btn btn-primary" href="{{ url_for('index') }}">Voltar para a lista</a>
+        </div>
+    </div>
+
+    <!-- Link para o script do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
