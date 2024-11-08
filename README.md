@@ -34,3 +34,19 @@ git clone git@github.com:htadmg/ciclo_de_vida_produtos.git
 ```bash
 cd .\ciclo_de_vida_produtos
 ```
+2. **Crie e Ative um Ambiente Virtual (opcional, mas recomendado)**
+- **Para Linux/MacOS:**
+```bash
+python -m .venv venv
+source .venv/bin/activate
+```
+
+- **Para Windows:**
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+3. **Instale as dependências**
+```bash
+pip install -r requirements.txt
+```
