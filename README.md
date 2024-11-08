@@ -2,6 +2,7 @@
 
 ## Descrição do Projeto
 ![image](https://github.com/user-attachments/assets/9060088f-281c-4f72-8fe0-f69c9a2c556c)
+![image](https://github.com/user-attachments/assets/52955ebd-ae5d-432c-afc2-81df132e40ab)
 
 O projeto é uma aplicação web desenvolvida com Flask que fornece informações detalhadas sobre embalagens e seus impactos ambientais, permitindo a visualização e filtragem dos dados com base em critérios específicos. Os usuários podem explorar informações como emissão de carbono, consumo de água, uso de energia e tempo de decomposição para cada tipo de embalagem. O objetivo é facilitar o acesso a dados ambientais, promovendo a conscientização sobre o impacto dos materiais e métodos de produção utilizados
 
