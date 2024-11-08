@@ -16,3 +16,21 @@ O projeto é uma aplicação web desenvolvida com Flask que fornece informaçõe
 - **FLASK**: Framework web usado para construir o servidor e o gerenciamento de dados.
 - **Bootstrap**: Framework de front-end usado para criar uma interface de usuário responsiva e estilizada.
 - **HTML/CSS**: Linguagens de marcação e estilo usadas para construir e estilizar a interface do usuário.
+
+## Como Configurar o Projeto
+
+Para executar este projeto localmente, siga os passos abaixo:
+
+1. **Clone o Repositório**
+- Usando HTTPS:
+```bash
+git clone https://github.com/htadmg/ciclo_de_vida_produtos.git
+```
+- Usando SSH:
+```bash
+git clone git@github.com:htadmg/ciclo_de_vida_produtos.git
+```
+- Navegue até o diretório do projeto:
+```bash
+cd .\ciclo_de_vida_produtos
+```
